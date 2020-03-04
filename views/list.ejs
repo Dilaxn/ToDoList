@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>The Day</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box" id="heading">
+      <h1 > <%= TheDay %></h1>
+    </div>
+
+<div class="box">
+
+
+<% for(var i=0;i<newItem.length;i++) {%>
+  <div class="item">
+
+      <input type="checkbox" />
+
+      <p>
+    
+      <%= newItem[i] %>
+    </p>
+  </div>
+
+<% } %>
+
+
+<form action="/" class="item" method="post">
+  <input type="text" name="it" placeholder="New Item" autocomplete="off"/>
+  <button type="submit" name="sub" >+</button>
+</form>
+</div>
+
+  </body>
+</html>
